@@ -48,3 +48,155 @@ header{
 
 
 }
+
+.hero {
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: -20vh;
+}
+
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__item span {
+  text-transform: uppercase;
+}
+
+.hero__p {
+  animation-duration: 1s;
+  animation-name: slideInleft;
+  margin-bottom: -10vh;
+  margin-top: 28vh;
+}
+
+/* Ajustement de la marge pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+  .hero__p {
+      margin-bottom: -35vh;
+  }
+}
+
+/* Ajustement de la marge pour les petits écrans */
+@media screen and (max-width: 480px) {
+  .hero__p {
+      margin-bottom: -35vh;
+      margin-top: 20vh;
+  }
+}
+
+.hero__item.right {
+  animation-duration: 1s;
+  animation-name: slideInRight;
+}
+
+@media screen and (max-width:749px) {
+  .hero__item.left {
+    order: 2;
+  }
+
+  .hero__item.right {
+    order: 1;
+  }
+}
+
+@media screen and (min-width:750px) {
+  .hero__item {
+    flex: 1 0 50%;
+    text-align: left;
+  }
+
+  .hero__item.left {
+    align-items: flex-start;
+  }
+
+  .hero .title {
+    font-size: 5rem;
+  }
+
+  .hero__avatar img {
+    max-width: 400px;
+    border-radius: 50%;
+  }
+
+}
+
+
+/* Footer */
+
+footer {
+  background: #1f242d;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.4rem;
+}
+
+footer p {
+  margin: 0;
+  white-space: pre-line;
+  margin-left: 40px;
+  /* font-size: 10px; */
+}
+footer .grid {
+  align-items: center;
+}
+
+footer .socials {
+  justify-content: center;
+  text-align: center;
+}
+
+footer .socials li {
+  padding: 0 .7rem;
+}
+
+footer .socials a {
+  color: #B59970;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+  padding: 1rem;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  transition: all .4s;
+}
+
+footer .socials a:hover {
+  background: #FFF;
+  color: var(--color-body);
+}
+
+
+.adress {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media screen and (min-width:750px) {
+  footer {
+    text-align: left;
+  }
+
+  footer .grid__item {
+    max-width: 33.333%;
+  }
+}
