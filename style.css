@@ -49,85 +49,9 @@ header{
 
 }
 
-.hero {
-
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  margin-top: -20vh;
-}
-
-.hero__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero__item span {
-  text-transform: uppercase;
-}
-
-.hero__p {
-  animation-duration: 1s;
-  animation-name: slideInleft;
-  margin-bottom: -10vh;
-  margin-top: 28vh;
-}
-
-/* Ajustement de la marge pour les écrans de taille moyenne */
-@media screen and (max-width: 768px) {
-  .hero__p {
-      margin-bottom: -35vh;
-  }
-}
-
-/* Ajustement de la marge pour les petits écrans */
-@media screen and (max-width: 480px) {
-  .hero__p {
-      margin-bottom: -35vh;
-      margin-top: 20vh;
-  }
-}
-
-.hero__item.right {
-  animation-duration: 1s;
-  animation-name: slideInRight;
-}
-
-@media screen and (max-width:749px) {
-  .hero__item.left {
-    order: 2;
-  }
-
-  .hero__item.right {
-    order: 1;
-  }
-}
-
-@media screen and (min-width:750px) {
-  .hero__item {
-    flex: 1 0 50%;
-    text-align: left;
-  }
-
-  .hero__item.left {
-    align-items: flex-start;
-  }
-
-  .hero .title {
-    font-size: 5rem;
-  }
-
-  .hero__avatar img {
-    max-width: 400px;
-    border-radius: 50%;
-  }
-
+section {
+  margin: 0% 10%;
+  padding: 0 10%;
 }
 
 
@@ -199,4 +123,70 @@ footer .socials a:hover {
   footer .grid__item {
     max-width: 33.333%;
   }
+}
+
+/* Ajustement de la marge pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+  .hero__p {
+      margin-bottom: -35vh;
+  }
+}
+
+/* Ajustement de la marge pour les petits écrans */
+@media screen and (max-width: 480px) {
+  .hero__p {
+      margin-bottom: -35vh;
+      margin-top: 20vh;
+  }
+}
+
+
+
+@media screen and (max-width:749px) {
+  .hero__item.left {
+    order: 2;
+  }
+
+  .hero__item.right {
+    order: 1;
+  }
+}
+
+#a-propos {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.img-desc .left {
+  justify-self: center;
+  height: 346px;
+  width: 80%;
+}
+.img-desc .right {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.img-desc .left img {
+    width: 100%;
+
+
+
+}
+.img-desc .left::after {
+
+    content: "";
+    height: 100%;
+
+    width: 100%;
+    z-index: -1;
+}
+
+.img-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+
 }
