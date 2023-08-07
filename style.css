@@ -50,6 +50,11 @@ section {
   padding: 0 10%;
 }
 
+section#portfolio.portfolio{
+  margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+}
 
 .portfolio{
   width: 100%;
