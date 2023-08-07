@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppin');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap');
 
 * {
   margin: 0;
@@ -42,18 +43,108 @@ header{
 
 }
 
-.navbar a:hover,
-.navbar a.active{
-  color: #0ef;
 
-
-}
 
 section {
   margin: 0% 10%;
   padding: 0 10%;
 }
 
+
+.portfolio{
+  width: 100%;
+  height: 100%;
+  bottom: 40vh;
+
+  top: 100%;
+
+}
+.portfolio .grid__item {
+  max-width: 50%;
+  margin-bottom: 0;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.portfolio2 .grid__item {
+  max-width: 50%;
+  margin-bottom: 0;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.portfolio .grid__item.hide {
+  opacity: 0;
+  max-width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+.portfolio2 .grid__item.hide {
+  opacity: 0;
+  max-width: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+.portfolio-filters .grid__item {
+  max-width: 50%;
+  margin-bottom: 0;
+}
+
+.portfolio-filters a {
+  color: var(--color-body);
+  background: #EEE;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.portfolio-filters a.active {
+  color: #B59970;
+  background: #5b6c78;
+}
+
+
+.grid_portfolio{
+  grid-template-columns: 1fr 1fr ;
+  display: grid;
+  justify-items: center;
+  }
+
+  .grid__item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  @media screen and (min-width:750px) {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .grid__item {
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .grid {
+      display: flex;
+    }
+  }
 
 /* Footer */
 
@@ -87,7 +178,7 @@ footer .socials li {
 }
 
 footer .socials a {
-  color: #B59970;
+
   border: 1px solid #FFF;
   border-radius: 50%;
   padding: 1rem;
@@ -125,32 +216,11 @@ footer .socials a:hover {
   }
 }
 
-/* Ajustement de la marge pour les écrans de taille moyenne */
-@media screen and (max-width: 768px) {
-  .hero__p {
-      margin-bottom: -35vh;
-  }
-}
-
-/* Ajustement de la marge pour les petits écrans */
-@media screen and (max-width: 480px) {
-  .hero__p {
-      margin-bottom: -35vh;
-      margin-top: 20vh;
-  }
-}
 
 
 
-@media screen and (max-width:749px) {
-  .hero__item.left {
-    order: 2;
-  }
 
-  .hero__item.right {
-    order: 1;
-  }
-}
+
 
 #a-propos {
   margin-top: 100px;
@@ -189,4 +259,11 @@ footer .socials a:hover {
   grid-template-columns: 1fr 1fr;
   width: 100%;
 
+}
+
+.grid__item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  padding: 1rem;
 }
