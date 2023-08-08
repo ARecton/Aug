@@ -130,7 +130,7 @@ section#portfolio.portfolio{
   @media screen and (min-width:750px) {
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+
       padding: 2rem;
     }
 
@@ -231,44 +231,44 @@ footer .socials a:hover {
   margin-top: 100px;
   margin-bottom: 50px;
   padding: 0 10%;
-
-}
-
-.img-desc .left {
-  justify-self: center;
-  height: 346px;
-  width: 80%;
-}
-.img-desc .right {
-  width: 100%;
-  margin-left: 20px;
-}
-
-.img-desc .left img {
-    width: 100%;
-
-
-
-}
-.img-desc .left::after {
-
-    content: "";
-    height: 100%;
-
-    width: 100%;
-    z-index: -1;
 }
 
 .img-desc {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center; /* Vertically align items */
+  justify-content: space-between; /* Horizontally distribute items */
   width: 100%;
-
 }
+
+.img-desc .left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-desc .right {
+  width: calc(100% - 346px); /* Adjust the width to leave space for the image */
+}
+
+/* Adjust the rest of your CSS as needed */
 
 .grid__item {
   flex-grow: 1;
   flex-shrink: 0;
   width: 100%;
   padding: 1rem;
+}
+
+
+.form {
+  width: 340px;
+  height: 160px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  position: relative;
 }
