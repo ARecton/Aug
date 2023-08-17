@@ -9,7 +9,7 @@
 }
 
 body{
-  background: #1f242d;
+  background: #d8dde9;
 }
 
 header{
@@ -27,7 +27,7 @@ header{
 
 .logo{
   font-size: 25px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: 600;
   cursor: default;
@@ -35,7 +35,7 @@ header{
 
 .navbar a{
   font-size: 18px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
@@ -274,9 +274,7 @@ footer .socials a:hover {
 }
 
 
-body {
-	background-color: #f8fafc;
-}
+
 
 .container {
 	padding: 2rem;
