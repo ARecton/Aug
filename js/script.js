@@ -1,16 +1,16 @@
-// navbar section start 
+// navbar section start
 const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links');
 
 navToggle.addEventListener('click', () => {
     links.classList.toggle('show-links');
 });
-// navbar section end 
+// navbar section end
 
 
-// Slider Section 
-// Slider Section 
-// Slider Section 
+// Slider Section
+// Slider Section
+// Slider Section
 var slides = document.querySelectorAll(".slide");
 var dots = document.querySelectorAll(".dot");
 var index = 0;
@@ -54,6 +54,3 @@ dots.forEach((dot, dotIndex) => {
 
 // Initial slide display
 changeSlide();
-
-
-
