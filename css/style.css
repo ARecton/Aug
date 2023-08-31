@@ -461,16 +461,25 @@ footer p {
   object-fit: cover; /* Pour conserver l'aspect ratio de l'image et la faire remplir le conteneur */
 }
 
+/* CSS */
 .discover-link {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-  font-size: 120px;
+  font-size: 5vw; /* Utilisation de vw pour la taille de police */
   font-weight: 900;
   color: #3a4a4a;
-  padding: 10px 20px;
+  padding: 1vw 2vw; /* Utilisation de vw pour les marges internes */
   text-decoration: none;
   border-radius: 5px;
+}
+
+/* Utilisation de média queries pour ajuster le style en fonction de la largeur de l'écran */
+@media (max-width: 768px) {
+  .discover-link {
+    font-size: 10vw;
+    padding: 2vw 4vw;
+  }
 }
