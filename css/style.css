@@ -213,18 +213,35 @@ nav {
 /* Slider Section  */
 /* Slider Section  */
 /* Slider Section  */
+/* CSS */
 .slider-container {
-    padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
 }
 
 #slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 300%; /* Permet à chaque slide de prendre toute la largeur */
+}
+
+.slide {
+  flex: 0 0 33.33%; /* Chaque slide prend 33.33% de la largeur pour un total de 100% sur 3 slides */
+}
+
+.controls {
+  cursor: pointer;
+}
+
+
+.slider {
     width: 80%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
 }
 
-.slide {
+#slide {
     width: 100%;
     display: none;
     animation-name: fade;
@@ -232,10 +249,8 @@ nav {
 }
 
 .slide img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center;
+  width: 100%; /* Les images prennent toute la largeur de leur conteneur */
+  height: auto; /* Garantit que la hauteur s'ajuste de manière proportionnelle */
 }
 
 @keyframes fade {
