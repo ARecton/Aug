@@ -141,11 +141,11 @@ nav {
     padding: 1rem;
 }
 
-.logo {
-    font-size: 25px;
-    color: #fff;
-    font-weight: 600;
+img.logo{
+  width : 150px;
+height : 150px;
 }
+
 
 /* nav toggle or click mobile menu  */
 .nav-toggle {
