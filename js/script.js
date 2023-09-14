@@ -73,7 +73,7 @@ lightBoxContent.appendChild(lightBoxNext);
 
 document.body.appendChild(lightBoxContainer);
 
-let index = 1;
+let start = 1;
 
 function showLightBox(n) {
     if (n > galleryItem.length) {

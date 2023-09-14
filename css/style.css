@@ -133,6 +133,18 @@ nav {
     z-index: 999;
 }
 
+.bouton {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: #fff; /* Couleur du texte */
+  text-decoration: none; /* Supprime les soulignements par défaut des liens */
+
+
+  transition: background-color 0.3s ease; /* Animation de transition de la couleur de fond */
+}
+
+
 /* navbar logo section  */
 .nav-header {
     display: flex;
@@ -380,6 +392,7 @@ img.logo{
 .portraits .title-container {
     width: 80%;
     margin: auto;
+    padding: inherit;
 }
 
 .portraits .title-container h3 {
