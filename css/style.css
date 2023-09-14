@@ -429,7 +429,7 @@ img.logo{
 @media screen and (max-width: 992px) {
     .portraits .title-container {
         width: 100%;
-        padding: 0 2rem;
+        padding: 35px 2rem;
     }
 
     .portraits .portraits-container {
