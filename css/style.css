@@ -114,7 +114,7 @@ img {
 
 a {
     text-decoration: none;
-
+    color: 	#000;
 }
 
 ul {
@@ -127,7 +127,7 @@ ul {
 /* Header Navbar*/
 /* Header Navbar*/
 nav {
-  background-image: linear-gradient(to right top, #413c3e, #423d41, #423f44, #424147, #414349, #3d3f47, #3a3c44, #373842, #332d39, #31222d, #2d181f, #270e0e);
+  background: 	#D3D3D3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -139,7 +139,7 @@ nav {
   display: inline-block;
   padding: 10px 20px;
 
-  color: #fff; /* Couleur du texte */
+  color: #000; /* Couleur du texte */
   text-decoration: none; /* Supprime les soulignements par défaut des liens */
 
   font-family: 'Merriweather', serif;
@@ -177,11 +177,12 @@ nav {
     height: 0;
     overflow: hidden;
     transition: all 0.3s linear;
+    color: 	#000;
 }
 
 /* navbar link menu  */
 .links a {
-    color: #fff;
+    color: #000;
     font-size: 17px;
     font-weight: 500;
     text-transform: capitalize;
