@@ -7,9 +7,10 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 body {
-  background-color: #ecf0f1;
+
 }
 .gallery-container {
   display: flex;
@@ -113,6 +114,7 @@ img {
 
 a {
     text-decoration: none;
+
 }
 
 ul {
@@ -125,7 +127,7 @@ ul {
 /* Header Navbar*/
 /* Header Navbar*/
 nav {
-    background: #000;
+  background-image: linear-gradient(to right top, #413c3e, #423d41, #423f44, #424147, #414349, #3d3f47, #3a3c44, #373842, #332d39, #31222d, #2d181f, #270e0e);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
@@ -140,7 +142,7 @@ nav {
   color: #fff; /* Couleur du texte */
   text-decoration: none; /* Supprime les soulignements par défaut des liens */
 
-
+  font-family: 'Merriweather', serif;
   transition: background-color 0.3s ease; /* Animation de transition de la couleur de fond */
 }
 
@@ -153,9 +155,7 @@ nav {
     padding: 1rem;
 }
 
-img.logo{
 
-}
 
 
 /* nav toggle or click mobile menu  */
@@ -243,7 +243,7 @@ img.logo{
 /* About Section  */
 /* About Section  */
 .about {
-    background: #e8faf4;
+
     margin-top: 63px;
     padding: 4rem 0;
 }
@@ -267,15 +267,18 @@ img.logo{
 
 .about-container .about-item .about-info h3 {
     font-size: 25px;
+    font-family: 'Merriweather', serif;
 }
 
 .about-container .about-item .about-info p {
     font-size: 17px;
     padding-top: 1rem;
+    font-family: 'Merriweather', serif;
 }
 
 .about-container .about-photo img {
     max-width: 100%;
+    margin-left: -20px;
 }
 
 /* About Responsive Section  */
@@ -385,7 +388,7 @@ img.logo{
 /* Portraits Section  */
 /* Portraits Section  */
 .portraits {
-    background: #f7f7f7;
+
     padding: 3rem 0;
 }
 
