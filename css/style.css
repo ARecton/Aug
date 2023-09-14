@@ -142,8 +142,7 @@ nav {
 }
 
 img.logo{
-  width : 150px;
-height : 150px;
+
 }
 
 
@@ -486,14 +485,25 @@ height : 150px;
 
 /* Footer  */
 footer {
-    background: #1f242d;
-    padding: 2rem;
+  background: #fff;
+  padding: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Pour aligner verticalement le texte et le logo */
 }
 
 footer p {
-    font-size: 17px;
-    color: #fff;
-    text-align: center;
+  font-size: 17px;
+  color: #1f242d;
+  text-align: left; /* Pour aligner le texte à droite */
+}
+
+/* Stylez le logo comme vous le souhaitez ici */
+.footer-content img {
+  max-width: 100%; /* Pour éviter que l'image ne dépasse la largeur du conteneur */
 }
 
 /* accueil */
